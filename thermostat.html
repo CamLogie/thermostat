@@ -3,23 +3,27 @@
   <head>
     <meta charset = 'utf-8'>
     <title>Thermostat</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="src/thermostat.js"></script>
+    <script src="src/interface.js"></script>
   </head>
 
   <body>
-    <h1>Temperature: </h1>
+    <h1 id = 'thermostat'> Temperature: </h1>
     
     <label for ="degrees">Enter temperature:</label>
     <input id="degrees" type="text">
     
-    <button>Set</button>
-    <button>Reset</button>
+    <button id = 'set_temperature'>Set</button>
+    <button id = 'reset_temperature'>Reset</button>
     <br>
-    <button>View Usage</button>
+    <p id = usage></p>
+    <button id = 'view_usage'>View Usage</button>
     <br>
-    <p>Power Saving Mode:</p>
-    <input type = radio id = on name = powersaving value = 'On'>
+    <p id = psm>Power Saving Mode:</p> 
+    <input class = PSM type = radio id = on name = powersaving value = 'On'>
     <label for = on>On</label><br>
-    <input type = radio id = off name = powersaving value = 'Off'>
+    <input class = PSM type = radio id = off name = powersaving value = 'Off'>
     <label for = off>Off</label><br>
 
   </body>

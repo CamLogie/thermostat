@@ -3,7 +3,7 @@ class Thermostat {
   constructor() {
     this.temperature = 20;
     this.powerSaving = true;
-  }
+    }
 
   setTemperature(number) {
     if (number < 10 ) {
